@@ -6,11 +6,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-
+<style type="text/css">
+	h1{
+		color: white;
+	}
+</style>
 </head>
 <body>
 
-
-
+	{% if friend in facebook_friends%}
+	<h1> true</h1>
+	{% else %}
+	<h1> false</h1>
+	{% endif %}
 </body>
 </html>
